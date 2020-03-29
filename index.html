@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Sally's Resume</title>
+</head>
+<body>
+    <div id="application-root"></div>
+
+<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+<script type="text/babel">
+   function App(props) {
+    console.log(props)
+    return (
+            <div>
+                <main>
+                    <header>
+                        <h1>Sally</h1>
+                    </header>
+                    <section>
+                        <h2>Education</h2>
+                        <p>University of Arkansas</p>
+                    </section>
+                    <section>
+                        <h2>Employment</h2>
+                        <p>Google<br/>
+                            Software Engineer<br/>
+                            April 2018-Present<br/>
+                            Lorem ipsum
+                        </p>
+                        <p>Apple<br/>
+                            Front-End Developer <br/>
+                            April 2016-April 2018 <br/>
+                            Lorem ipsum
+                        </p>
+                    </section>
+                </main>
+                <address>
+                    <h2>Contact Info</h2>
+                    <p>Sally</p>
+                    <br></br>
+                    <a href="mailto:webmaster@example.com">Email Address</a><br></br>
+                    479-888-2121<br></br>
+                    <figure>
+                    <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="picture of sally" id="sally-pic"/>
+                    <figcaption>Sally most recent photo yr 2020</figcaption>
+                    </figure>
+                </address>
+            </div>
+  );
+};
+
+ReactDOM.render(
+  <App  />,
+  document.querySelector('#application-root')
+);
+</script>
+</body>
+</html>
